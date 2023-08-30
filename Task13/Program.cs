@@ -7,7 +7,7 @@ int ThirdDigit(int num)
     if (check == num)
     {
         Console.WriteLine("Третьей цифры нет");
-        Environment.Exit(0);
+        Environment.Exit(0); // Я так криво реализовал выход из программы. Можно было и return'ом, наверное. 
     }
     else 
     {
