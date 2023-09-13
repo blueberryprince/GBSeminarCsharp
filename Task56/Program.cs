@@ -58,6 +58,7 @@ void PrintArray(int[] array)
 int[] arrayofsum = RowSum(array2d);
 PrintArray(arrayofsum);
 Console.WriteLine();
+Console.WriteLine();
 void FindMinSum(int[] array)
 {
     int min = array[0];
@@ -70,6 +71,7 @@ void FindMinSum(int[] array)
             count = i;
         }
     }
-    Console.WriteLine($"Минимальная построковая сумма находится в строке {count}");
+    Console.WriteLine($"Минимальная построковая сумма находится в строке {count + 1}");
 }
 FindMinSum(arrayofsum);
+Console.WriteLine();
