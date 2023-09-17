@@ -6,7 +6,7 @@ int to = Convert.ToInt32(Console.ReadLine());
 
 if (from == to)
 {
-    Console.WriteLine("Сумма чисел равна 0");
+    Console.WriteLine("Сумма чисел в промежутке равна 0");
     return;
 }
 
