@@ -4,14 +4,24 @@ Console.WriteLine("Введите 2 натуральных числа");
 int from = Convert.ToInt32(Console.ReadLine());
 int to = Convert.ToInt32(Console.ReadLine());
 
-int checkfrom(int number)
+if (from == to)
 {
-    if (number < 1) return checkfrom(number + 1);
-    else return number;
+    Console.WriteLine("Сумма чисел равна 0");
+    return;
+}
+
+int checkfrom(int fromnumber)
+{
+    if (fromnumber < 1) return checkfrom(fromnumber + 1);
+    else return fromnumber;
+}
+int checkto(int tonumber)
+{
+    if (tonumber < 1) return checkfrom(tonumber + 1);
+    else return tonumber;
 }
 int newfrom = checkfrom(from);
-
-if (from == to) return;
+int newto = checkto(to);
 
 int SumBetweenTwoNumbers(int from, int to)
 {
@@ -23,5 +33,5 @@ int SumBetweenTwoNumbers(int from, int to)
     return from;
     return 0;
 }
-int result = SumBetweenTwoNumbers(newfrom,to);
+int result = SumBetweenTwoNumbers(newfrom,newto);
 Console.WriteLine(result);
